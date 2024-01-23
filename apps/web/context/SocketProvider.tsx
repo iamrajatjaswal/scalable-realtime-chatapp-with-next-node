@@ -12,6 +12,7 @@ interface ISocketContext {
 
 const SocketContext = React.createContext<ISocketContext | null>(null);
 
+// custom hook useSocket
 export const useSocket = () => {
   const state = useContext(SocketContext);
 
